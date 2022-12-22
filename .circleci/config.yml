@@ -104,7 +104,7 @@ jobs:
       - restore_cache:
           keys: [frontend-build]
       - run:
-          name: frontend-build
+          name: Audit frontend dependencies
           command: |
             cd frontend
             npm install
@@ -118,7 +118,7 @@ jobs:
       - restore_cache:
           keys: [backend-build]
       - run:
-          name: backend-build
+          name: Audit backend dependencies
           command: |
             cd backend
             npm install
